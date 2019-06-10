@@ -1,0 +1,8 @@
+//gawk is a GNU edition of awk to use in windows and need to be installed first to use it.
+
+echo off
+if "%1" == "" start "" /min "%~f0" MY_FLAG && exit  //this will run minimize the cmd and run in low mode.
+file1.txt  // filename with full path need to be specified. This file will popup and need to enter file from which we extract the sequence.
+gawk "{print $Field}" fullfilenamewithpath.txt > newfilewithextractedfileds.txt  //Filed - this need to be integer from which row you need to extract the text.
+newfilewithextractedfileds.txt // This will display the text whch is extracted from the original file.
+exit cmd
