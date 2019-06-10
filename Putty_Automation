@@ -1,0 +1,4 @@
+@ECHO off
+ECHO Welcome to Automated Script
+SET /P sto=Enter the Storage/Switch name : 
+start putty.exe -load New -ssh %sto% -l xxxx -pw zzzzz  // xxx -username , zzzz- password.
